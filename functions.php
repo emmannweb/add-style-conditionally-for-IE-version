@@ -5,7 +5,7 @@
 /**
 *
 *
-Enqueue styles conditionally in wordpress for internet explorer version.
+* Enqueue styles conditionally in wordpress for internet explorer version.
 *
 *
  */
@@ -34,7 +34,7 @@ function enqueue_style_internet_explorer() {
 	wp_style_add_data( 'past_verson_of_ie', 'conditional', 'lt IE 9' );
 
 	/**
-	 gt IE 8: greater or egual
+	 *gt IE 8: greater or egual
 	 */
 	wp_enqueue_style( 'newer_version', get_stylesheet_directory_uri() . "/css/newer-ie.css" );
 	wp_style_add_data( 'newer_version', 'conditional', 'gt IE 8' );
